@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../logo.svg';
 import '../stlyes/App.less';
+import Header from './Header';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Header text={"albert"}/>
         <a
           className="App-link"
           href="https://reactjs.org"
