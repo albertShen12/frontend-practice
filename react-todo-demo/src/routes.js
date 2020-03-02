@@ -8,7 +8,7 @@ import { renderRoutes } from "react-router-config";
 
 const SuspenseComponent = Component => props => {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<div>loading...</div>}>
       <Component {...props}/>
     </Suspense>
   );

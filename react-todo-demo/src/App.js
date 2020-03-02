@@ -3,9 +3,7 @@ import { AppRouteComponent } from "./routes";
 
 function App() {
   return (
-    <div>
-      <AppRouteComponent/>
-    </div>
+    <AppRouteComponent/>
   );
 }
 
