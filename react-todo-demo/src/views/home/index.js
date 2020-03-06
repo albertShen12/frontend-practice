@@ -7,15 +7,9 @@ const mapStateToProps = state => ({
   todos: state.getIn(["todo", "todos"]),
 });
 
-const mapDispatchToProps = dispatch => ({
-    setUser(payload){
-        dispatch(doAction(appActTypes.USER_SET)(payload))
-    },
-    resetUser(payload){
-        dispatch(doAction(appActTypes.USER_RESET)(payload))
-    },
-    addTodos:doAction(todoActTypes.TODOS_ADD),
-    removeTodos:doAction(todoActTypes.TODOS_REMOVE),
+const mapDispatchToProps = ({
+    setUser:doAction(appActTypes.USER_SET),
+    resetUser:doAction(appActTypes.USER_RESET)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
