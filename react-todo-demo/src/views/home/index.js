@@ -5,6 +5,8 @@ import {doAction,appActTypes,todoActTypes} from "@/redux/actions";
 const mapStateToProps = state => ({
   user: state.getIn(["app", "user"]),
   todos: state.getIn(["todo", "todos"]),
+  targets: state.getIn(["todo", "targets"]),
+  achieves: state.getIn(["todo", "achieves"]),
 });
 
 const mapDispatchToProps = ({

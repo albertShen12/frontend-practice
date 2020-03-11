@@ -10,9 +10,7 @@ const Layout = props => {
   return (
     <div id="app-layout">
       <Header />
-      <div id="app-container">
-        <div className="width-wall">{renderRoutes(route.routes)}</div>
-      </div>
+      <div id="app-container">{renderRoutes(route.routes)}</div>
       <Footer />
     </div>
   );
