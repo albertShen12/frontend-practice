@@ -11,7 +11,8 @@ const SuspenseComponent = Component => props => {
   );
 };
 
-const Home = lazy(() => import("@/views/home"));
+// const Home = lazy(() => import("@/views/home"));
+const Home = lazy(() => import("@/views/home/Home"));
 const Login = lazy(() => import("@/views/login"));
 const PageNotFound = lazy(() => import("@/views/pageNotFound"));
 

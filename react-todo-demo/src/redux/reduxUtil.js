@@ -17,13 +17,13 @@ export function commonReducer({ type, payload },state, initState) {
       data=initState;
       break;
     case "update":
-      data=Object.assign({},state[key],payload);
+      data=Object.assign({},state.get(key),payload);
       break;
     case "add":
-      data=[...state[key],payload];
+      data=[...state.get(key),payload];
       break;
     case "remove":
-      data=state[key].splice(1,payload);
+      data=state.get(key).splice(1,payload);
       break;
   }
   return {key,payload:data};

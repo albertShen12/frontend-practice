@@ -3,10 +3,11 @@ import { commonReducer } from "../reduxUtil";
 import { Map } from "immutable";
 const initState = Map({
   targets: [
-    { id: 1001, title: "学习redux", content: "" },
-    { id: 1002, title: "学习egg.js", content: "" }
+    { id: 1001, title: "学习redux", content: "",status:1},
+    { id: 1002, title: "学习egg.js", content: "" ,status:2},
+    { id: 1003, title: "学习react", content: "",status:3 }
   ],
-  achieves: [{ id: 2001, title: "学习react", content: "" }],
+  // achieves: [{ id: 1003, title: "学习react", content: "" }],
   todos: [
     { id: 2001, title: "学习react16生命周期", content: "", targetId: 2001 },
     { id: 2001, title: "学习react新特性hooks", content: "", targetId: 2001 }

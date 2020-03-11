@@ -1,21 +1,44 @@
-.home-view{
-    margin:0 auto;
-    display: flex;
-    width: 960px;
-    justify-content: space-between;
-    .target-board{
-        flex: none;
-        width: 240px;
-        // min-height: 200px;
-        // padding: 8px 12px;
-        // border-radius: 8px;
-    }
-    .todo-board{
-        flex: none;
-        width: 640px;
-        min-height: 600px;
-        padding: 8px 12px;
-        border-radius: 8px;
-        background-color: white;
-    }
+@import "./app-theme.less";
+.home-view {
+  margin: 0 auto;
+  display: flex;
+  width: 960px;
+  justify-content: space-between;
+  .target-board {
+    flex: none;
+    width: 240px;
+    // min-height: 200px;
+    // padding: 8px 12px;
+    // border-radius: 8px;
+  }
+  .todo-board {
+    flex: none;
+    width: 640px;
+    min-height: 600px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: white;
+  }
+  .target-item {
+      font-size: 16px;
+      line-height: 20px;
+  }
+  .status-icon {
+    margin-left: 4px;
+    padding: 4px 4px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  .status-icon.status-finish {
+    border: 1px solid #ffa000;
+    color: #ffa000;
+  }
+  .status-icon.status-inprogress {
+    border: 1px solid @primary-color;
+    color: @primary-color;
+  }
+  .status-icon.status-unactive {
+    border: 1px solid #999;
+    color: #999;
+  }
 }
