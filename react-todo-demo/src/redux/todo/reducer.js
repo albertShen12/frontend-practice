@@ -7,6 +7,7 @@ const initState = Map({
     { id: 1002, title: "学习egg.js", content: "" ,status:2},
     { id: 1003, title: "学习react", content: "",status:3 }
   ],
+  curTarget:1001,
   // achieves: [{ id: 1003, title: "学习react", content: "" }],
   todos: [
     { id: 2001, title: "学习react16生命周期", content: "", targetId: 2001 },

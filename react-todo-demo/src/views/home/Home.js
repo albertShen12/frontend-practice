@@ -48,7 +48,7 @@ const Home = props => {
               default:
                 StatusIcon=(<span className="status-icon status-unactive">未激活</span>);
             }
-          return <p key={item.id}>{item.title}{StatusIcon}</p>;
+          return <p className="target-item" key={item.id}>{item.title}{StatusIcon}</p>;
           })}
         </Card>
       </div>

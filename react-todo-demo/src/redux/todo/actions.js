@@ -12,6 +12,8 @@ const actionTypes={
     ACHIEVES_RESET:"todo_achieves.reset",
     ACHIEVES_ADD:"todo_achieves.add",
     ACHIEVES_REMOVE:"todo_achieves.remove",
+    CUR_TARGET_SET:"todo_curTarget.set",
+    CUR_TARGET_RESET:"todo_curTarget.reset",
     CUR_TODO_SET:"todo_curTodo.set",
     CUR_TODO_RESET:"todo_curTodo.reset",
 };

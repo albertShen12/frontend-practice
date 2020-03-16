@@ -3,6 +3,7 @@ import { commonReducer } from "../reduxUtil";
 import { Map } from "immutable";
 const initState = Map({
   user: undefined,
+  slideExpand:true,
   fetching: false
 });
 
